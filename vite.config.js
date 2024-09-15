@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://dorm-drop-backend-e975.vercel.app',       //https://dormdrop.onrender.com   //http://localhost:3000
+        target: 'https://dorm-drop-backend-e975.vercel.app/',       //https://dormdrop.onrender.com   //http://localhost:3000
         secure: false,
       },
     },
