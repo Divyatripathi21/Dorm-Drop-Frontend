@@ -30,6 +30,7 @@ export default function SignIn() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
+        mode:'no-cors'
       });
       const data = await res.json();
       if (data.success === false) {
