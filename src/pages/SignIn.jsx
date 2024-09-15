@@ -32,6 +32,7 @@ export default function SignIn() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
+      console.log('signinfrontend');
       if (data.success === false) {
         setLoading(false);
         return setErrorMessage(data.message);
